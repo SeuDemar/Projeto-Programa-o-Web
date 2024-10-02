@@ -1,42 +1,61 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #c77575; /* Cor de fundo ajustada */
+    background-color: #c77575;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 h1 {
     margin: 20px 0;
     text-align: center;
-    color: #4a90e2; /* Cor do título ajustada */
+    color: #4a90e2;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 15px; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
     padding: 20px;
-    max-width: 1200px; 
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .portfolio-item {
     background: rgb(224, 200, 200);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; 
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {
     width: 100%;
-    height: auto; 
-    border-radius: 8px; 
+    height: auto;
+    border-radius: 8px;
 }
 
 .portfolio-item .DescPrj {
     padding: 20px;
     text-align: center;
-    color: #333; 
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio {
+        padding: 10px;
+    }
 }
