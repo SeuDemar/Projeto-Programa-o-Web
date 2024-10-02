@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c77575;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+.promo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.promo-item {
+    background: #ffbdbd;
+    border: 1px solid #6d2525;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; 
+}
+
+.promo-item:hover {
+    transform: scale(1.05); 
+}
+
+.promo-item img {
+    width: 600px;  
+    height: 500px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+del {
+    color: red; 
+    text-decoration: line-through; 
+}
+
+.discount-price {
+    color: green; 
+    font-weight: bold;
+}

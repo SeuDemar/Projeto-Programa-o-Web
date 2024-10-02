@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c77575; /* Cor de fundo ajustada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #4a90e2; /* Cor do título ajustada */
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 15px; 
+    padding: 20px;
+    max-width: 1200px; 
+}
+
+.portfolio-item {
+    background: rgb(224, 200, 200);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.portfolio-item .DescPrj {
+    padding: 20px;
+    text-align: center;
+    color: #333; 
+}

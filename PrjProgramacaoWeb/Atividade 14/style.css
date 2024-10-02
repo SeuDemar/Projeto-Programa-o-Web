@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c77575;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #2378d9;
+    margin-bottom: 40px;
+}
+
+.team-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile {
+    background: #ffeeee;
+    border: 1px solid #634e4e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    height: 350px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.profile img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    margin: 0 auto 10px; 
+    display: block; 
+}
+
+.profile h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.profile p {
+    margin: 5px 0;
+}

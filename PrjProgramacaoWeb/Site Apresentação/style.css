@@ -1,0 +1,23 @@
+#atividades {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#atividades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#atividades li {
+    margin: 20px 0;
+}
+
+#atividades img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; 
+    border-radius: 10px; /* Para dar um leve arredondamento */
+}
+
+#atividades p {
+    color: rgb(255, 255, 255);
+}
